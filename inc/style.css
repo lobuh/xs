@@ -71,7 +71,7 @@
 
 	/** basics **/
 	* {
-	    cursor: url('./inc/images/cursor.png'), auto !important;
+	    cursor: url('/images/cursor.png'), auto !important;
 	}
 
 	body {
@@ -251,7 +251,7 @@
 	.winf-deco2 {
 	    /** sidebar image **/
 	    background-color: var(--accent);
-	    background-image: url(./inc/images/avatar.png);
+	    background-image: url(/images/avatar.png);
 	    width: 240px;
 	    height: 270px;
 	    position: absolute;
