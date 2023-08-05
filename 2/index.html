@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>xat.me - Loba</title>
+	<link rel="stylesheet" href="./inc/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="quote">
+			it is literally impossible to be a woman. you are so beautiful, and so smart, and it kills me that you don't think
+			you're good enough. like, we have to always be extraordinary, but somehow we're always doing it wrong. you have to
+			be thin, but not too thin. and you can never say you want to be thin. you have to say you want to be healthy, but
+			also you have to be thin. you have to have money, but you can't ask for money because that's crass. you have to be
+			a boss, but you can't be mean. you have to lead, but you can't squash other people's ideas. you're supposed to
+			love being a mother, but don't talk about your kids all the damn time.you have to be a career woman but also
+			always be looking out for other people. you have to answer for men's bad behavior, which is insane, but if you
+			point that out, you're accused of complaining. you're supposed to stay pretty for men, but not so pretty that you
+			tempt them too much or that you threaten other women because you're supposed to be a part of the sisterhood. but
+			always stand out and always be grateful. but never forget that the system is rigged. so find a way to acknowledge
+			that but also always be grateful. you have to never get old, never be rude, never show off, never be selfish,
+			never fall down, never fail, never show fear, never get out of line. it's too hard; it's too contradictory and
+			nobody gives you a medal or says thank you. and it turns out in fact that not only are you doing everything wrong,
+			but also everything is your fault. i'm just so tired of watching myself and every single other woman tie herself
+			into knots so that people will like us. and if all of that is also true for a doll just representing women, then I
+			don't even know.
+		</div>
+		<div class="list">
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+			<a href="">♡</a>
+		</div>
+	<!--	<div id="list"></div>-->
+	</div>
+</body>
+<script>
+	const arr = [
+		['lem', 'https://xat.me/lemona', 'my beautiful wife.', './inc/images/heart-3.png'],
+		['leia', 'https://xat.me/royalty', 'the cutest gal on xat.', './inc/images/heart-2.png'],
+		['jad', 'https://xat.me/jadiction', 'my bff.', './inc/images/heart-1.png'],
+		['annie', 'https://xat.me/dork', 'my gorgeous girlfriend.', './inc/images/heart-4.png'],
+		['rie', 'https://xat.me/marie', 'hottest girl EVER.', './inc/images/heart-5.png'],
+		['karls', 'https://xat.me/umbreon', 'GRRRRRRRRRR (it).', './inc/images/heart-6.png']
+	];
+	function list() {
+		var content = '';
+		arr.forEach(function (el, index) {
+			content += '<li><img ondragstart="return false" onselectstart="return false" src="' + el[3] + '"><a href="' + el[1] + '" target="_blank">' + el[0] + '</a><p>' + el[2] + '</p></li>';
+		})
+		document.getElementById("list").innerHTML = '<ol>' + content + '</ol>';
+	}
+	list();
+	$(document).ready(function () {
+		$(".loader").css("display", "none");
+		$(".content").css("display", "block");
+	});
+</script>
+
+</html>
